@@ -1,0 +1,183 @@
+@import "../CSS/fonts.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+    background-color: #131313;
+    margin: 107px 134.55px auto 134.55px;
+}
+
+.head__text{
+    color: #E3B873;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    padding-left: 0;
+    letter-spacing: -2px;
+}
+
+.text {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    text-transform: none;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: end;
+    gap: 61px;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    line-height: 16px;
+    margin-right: 55px;
+}
+
+.header__list {
+    font-size: 14px;
+    
+    list-style: none;
+    color: #FFFFFF30;
+    letter-spacing: 0px;
+}
+
+.description__text {
+    color: #E3B873;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+.shell {
+    display: flex;
+    margin-top: 44px;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1171px;
+}
+
+.shell__item {
+    display: flex;
+    flex-flow: column;
+    width: 442px;
+    height: 482px;
+}
+
+.shell__head {
+    font-size: 27px;
+    line-height: 36px;
+    margin: 0 0 34px;
+    
+}
+
+.lin {
+    width: 92px;
+    size: 1px;
+    border-color: #E3B873;
+    margin-top: -53px;
+    margin-left: 161px;
+}
+
+.shell__text {
+    margin: 32px 0 70px;
+    line-height: 26px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.shell__inform {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "shell__city shell__area"
+        "shell__time shell__cost";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 65px;
+}
+
+.shell__images {
+    width: 679px;
+    height: 482px;
+    position: relative;
+}
+
+.image {
+    background-size: cover;
+    background-position: center center;
+    width: 679px;
+    height: 482.38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.notimage .notdots {
+    opacity: 0;
+}
+
+.slider__dots {
+    display: flex;
+    gap: 17px;
+}
+
+.slider__switch {
+    margin-top: 60px;
+    display: flex;
+    gap: 29.5px;
+}
+
+.slider__arrow {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.slider__arrow:hover {
+    transform: scale(1.1);
+}
+
+
+.slide__active {
+    border-bottom: solid 1px #E3B873;
+    color: #E3B873;
+}
+
+.slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF30;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+.slider__dots-item:hover,
+.slider__dots-item.active {
+    background: #fff;
+}
+
+.shell__images .image.active {
+    opacity: 1;
+    transition: opacity 800ms ease;
+}
+
